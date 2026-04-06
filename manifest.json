@@ -1,0 +1,30 @@
+{
+   "author": "Yuval Anteby",
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "katex-direction-fix@yourdomain.com",
+         "strict_min_version": "1.0.0"
+      }
+   },
+    "content_scripts": [ {
+      "css": [ "styles.css" ],
+      "js": [ "content.js" ],
+      "matches": [ 
+        "*://*.claude.ai/*", 
+        "*://*.gemini.google.com/*", 
+        "*://*.chatgpt.com/*" 
+      ]
+   } ],
+   "description": "Fix for AI chats when using RTL languages",
+   "homepage_url": "https://github.com/YuvalAnteby/AI-RTL-Fix",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmulAl2bBighxKkXiN37d9YAqR3udPQJ+RKnByxrN2A0cMfFAJ4WX6Ma0Rp5b/FduvdIg2dGHRSg3FI3CHV4wxDIHLs3Y85+9jZju9fw3PyrILF1UovcO7AX6sd2N5w7gVx6J5IW2y5rZj2z70ioPJKdHHkH1L/SGUeNrUe4uVEhqLOVOjPaahMQ5DYk91eROGnpVvAtc7MYYfTe34ZPq2dpRQCVmiBlyPBCz4/JfosmTcnKJlKSWUblelHFVJUwImbUIzdhp04ZQ1LRXIL6ycPOL9mWf+OvL9IvT7CV16HZ+C2dNd0geLJ5Xd7mwR3KWdHlpfkSZQrE8H6etQhHyQQIDAQAB",
+   "manifest_version": 3,
+   "name": "Chat-Math RTL Fix",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

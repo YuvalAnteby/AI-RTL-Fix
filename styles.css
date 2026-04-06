@@ -1,0 +1,34 @@
+/* made by Ofek Avan Danan :> */
+/* Updated for bulletproof Claude & Gemini RTL */
+
+/* 1. Force math and code blocks to ALWAYS be Left-to-Right */
+.katex,
+.inline-math,
+.katex-html,
+.katex-mathml,
+.katex-display,
+.code,
+code, 
+pre,
+.math,
+.math-inline,
+.math-display {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
+}
+
+/* 2. Fix bullet point padding for RTL lists on both Claude and Gemini */
+.standard-markdown ul[dir="rtl"],
+.standard-markdown ol[dir="rtl"],
+.markdown ul[dir="rtl"],
+.markdown ol[dir="rtl"] {
+  padding-right: 2rem !important;
+  padding-left: 0 !important;
+}
+
+/* 3. Ensure list items correctly align their markers */
+.standard-markdown li[dir="rtl"],
+.markdown li[dir="rtl"] {
+  text-align: right !important;
+}
