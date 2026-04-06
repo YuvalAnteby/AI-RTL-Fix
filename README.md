@@ -27,13 +27,13 @@ Since this extension is completely free and open-source, it is not hosted on the
 You can easily install it locally following these instructions
 
 ### Chromium (Chrome, Edge, Brave, & Opera)
-1. Click **Code > Download ZIP** at the top of this repository and extract the folder.
+1. Go to the Releases page on the right and download the latest release as a zip.
 2. Open your browser and navigate to the extensions page (e.g., `chrome://extensions/` or `edge://extensions/`).
 3. Toggle on **Developer mode** in the top right corner.
 4. Click **Load unpacked** and select the extracted `AI-RTL-Fix` folder.
 
 ### Firefox
-1. Click **Code > Download ZIP** and extract the folder.
+1. Go to the Releases page on the right and download the latest release as a zip.
 2. Open Firefox and type `about:debugging` in the URL bar.
 3. Click **This Firefox** on the left menu.
 4. Click **Load Temporary Add-on...**
@@ -41,14 +41,15 @@ You can easily install it locally following these instructions
 *(Note: Firefox removes temporary add-ons when you restart the browser).*
 
 ### Safari (macOS)
-1. Open Safari and go to **Safari > Settings > Advanced**.
-2. Check the box at the bottom: **Show features for web developers**.
-3. In the macOS menu bar, click **Develop** and check **Allow Unsigned Extensions**.
-4. Open your terminal and use Xcode's command line tools to convert the folder into a Safari App Extension by running: 
+1. Go to the Releases page on the right and download the latest release as a zip.
+2. Open Safari and go to **Safari > Settings > Advanced**.
+3. Check the box at the bottom: **Show features for web developers**.
+4. In the macOS menu bar, click **Develop** and check **Allow Unsigned Extensions**.
+5. Open your terminal and use Xcode's command line tools to convert the folder into a Safari App Extension by running: 
 ```bash
 xcrun safari-web-extension-converter /path/to/AI-RTL-Fix
 ```
-5. Build the project in Xcode to enable it in Safari. 
+6. Build the project in Xcode to enable it in Safari. 
 *(Note: You must re-enable "Allow Unsigned Extensions" every time Safari restarts).*
 
 ---
