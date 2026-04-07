@@ -1,7 +1,11 @@
 function fixRTL() {
-    // 1. Fix the AI Output Blocks (Runs on Claude, Gemini, and ChatGPT)
+    // 1. Fix the AI Output Blocks AND User Messages (Runs on Claude, Gemini, and ChatGPT)
     const outputBlocks = document.querySelectorAll(
+        // Claude output
         '.standard-markdown p, .standard-markdown ul, .standard-markdown ol, .standard-markdown li, .standard-markdown h1, .standard-markdown h2, .standard-markdown h3, .standard-markdown h4, .standard-markdown table, ' +
+        // Claude User Message
+        '[data-testid="user-message"] p, ' + 
+        // Gemini output
         '.markdown p, .markdown ul, .markdown ol, .markdown li, .markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown table'
     );
     

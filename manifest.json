@@ -1,6 +1,6 @@
-{
+1{
    "manifest_version": 3,
-   "version": "1.1.0",
+   "version": "1.1.1",
    "name": "AI RTL Fix",
    "description": "Fixes RTL text formatting, bullet points, and KaTeX math rendering natively on Claude, Gemini, and ChatGPT.",
    "author": "Yuval Anteby",
