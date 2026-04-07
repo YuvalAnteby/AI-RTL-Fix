@@ -21,8 +21,8 @@ fixRTL();
 let timeout;
 const observer = new MutationObserver(() => {
     clearTimeout(timeout);
-    // Wait 50ms after the last DOM change before running the heavy function
-    timeout = setTimeout(fixRTL, 50); 
+    // Wait 100ms after the last DOM change before running the heavy function
+    timeout = setTimeout(fixRTL, 100); 
 });
 
 observer.observe(document.body, { childList: true, subtree: true });
